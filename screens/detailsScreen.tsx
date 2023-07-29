@@ -1,9 +1,9 @@
 import React from 'react';
-import {StyleSheet, Text, Image, View, Pressable, Modal} from 'react-native';
+import {StyleSheet, Text, Image, View, Pressable} from 'react-native';
 import {observer} from 'mobx-react-lite';
 import {rootStore} from '../stores';
 import Pinchable from 'react-native-pinchable';
-import {ModalWindow} from './modalWindow';
+import {ModalWindow} from '../components/modalWindow';
 
 const DetailsScreen = observer(({route}) => {
   const {itemId} = route.params;
